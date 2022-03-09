@@ -13,6 +13,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call(
+            [
+                // 初始用戶
+                AdminSeeder::class,
+                // 使用者狀態
+                UserStatusSeeder::class
+            ]
+        );
     }
 }
