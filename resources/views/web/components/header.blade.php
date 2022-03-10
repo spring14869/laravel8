@@ -7,9 +7,9 @@
     <div class="navbar-nav">
         <div class="nav-item text-nowrap">
             @if (empty($admin))
-                <a class="nav-link px-3" href="{{ url('') }}">Sign in</a>
+                <a class="nav-link px-3" href="{{ url('') }}"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</a>
             @else
-                <a class="nav-link px-3" href="{{ url('logout') }}">Sign out ({{ $admin['name'] }})</a>
+                <a class="nav-link px-3" href="{{ url('logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out ({{ $admin['name'] }})</a>
             @endif
         </div>
     </div>

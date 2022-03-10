@@ -179,6 +179,10 @@ class UserController extends Controller
     public function destroy($id)
     {
         try {
+            if ($id == 1) {
+                throw new \Exception('無法刪除root user');
+            }
+
             $user = $this->user->findOrFail($id);
 
             if (!$user->delete()) {

@@ -3,7 +3,6 @@
 @section('title', 'Login')
 
 @push('styles')
-    <link href="/assets/css/signin.css" rel="stylesheet">
 @endpush
 
 @section('main')

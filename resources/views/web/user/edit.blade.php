@@ -125,6 +125,9 @@
     </form>
     @endif
 
+@endsection
+
+@section('script')
     <script>
         function userDelete() {
             return confirm('刪除此User？');
